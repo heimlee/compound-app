@@ -7,7 +7,7 @@ const initialState = {
   todoList: [],
 };
 
-export const todoListReducer = (state = initialState, action) => {
+export const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_TODO_LIST:
       return { ...state, loading: true };
