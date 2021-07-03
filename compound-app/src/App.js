@@ -9,6 +9,7 @@ import {
 import { Nav } from './modules/nav/Nav';
 import { Home } from './modules/home/Home';
 import { PostsList } from './modules/postsList/PostsList';
+import { Post } from './modules/post/Post';
 import { Todo } from './modules/todo/Todo';
 
 import './App.scss';
@@ -20,6 +21,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/posts" component={PostsList} />
+        <Route exact path="/posts/:id" component={Post} />
         <Route exact path="/todo" component={Todo} />
         <Redirect to="/" />
       </Switch>

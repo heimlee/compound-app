@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './home.scss';
 
-export const HomePage = () => (
+export const Home = () => (
   <main className="home-page-container">
     <div className="home-page-wrapper">
       <h1 className="home-page-title">Home page</h1>
