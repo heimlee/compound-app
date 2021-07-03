@@ -1,0 +1,32 @@
+.user-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+.user-name {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.user-param {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin: 10px;
+  min-width: 20px;
+}
+
+.user-data {
+  color: #666;
+  font-size: 12px;
+}

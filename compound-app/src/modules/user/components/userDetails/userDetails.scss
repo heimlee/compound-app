@@ -1,0 +1,47 @@
+.user-details-container {
+  width: 100vw;
+}
+
+.tabs-list {
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab {
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0px 0px;
+  cursor: pointer;
+  flex-basis: 7%;
+  margin: 0px 2px;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(1px);
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+
+  &:hover {
+    background-color: #303030;
+    color: #fff;
+  }
+}
+
+.selected {
+  border-color: #000 #000 #fff #000;
+  border-radius: 5px 5px 0px 0px;
+  border-style: solid;
+  border-width: 1px;
+
+  &:hover {
+    background: none;
+    color: #000;
+  }
+}
+
+.user-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
