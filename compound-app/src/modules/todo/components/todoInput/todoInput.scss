@@ -1,0 +1,30 @@
+.todo-input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.todo-input {
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  width: 50%;
+}
+
+.todo-input-button {
+  background-color: #322f32;
+  border: 1px solid #322f32;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+  outline: none;
+  padding: 10px 15px;
+
+  &:active,
+  &:hover {
+    background-color: #646464;
+  }
+}

@@ -1,0 +1,39 @@
+$color-hover: rgba(192, 192, 192, 0.66);
+
+.post-wrapper {
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid #cacaca;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  text-decoration: none;
+  padding: 0 10px 15px;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(243, 243, 243, 0.66);
+    border: 1px solid $color-hover;
+    box-shadow: 1px 1px 3px 1px $color-hover;
+    transition: all .3s ease;
+  }
+}
+
+.post-wrapper:first-of-type {
+  margin-top: 0;
+}
+
+.post-title {
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+}
+
+.post-body {
+  line-height: 1.6;
+  text-align: left;
+  white-space: pre-line;
+  width: 100%;
+}
