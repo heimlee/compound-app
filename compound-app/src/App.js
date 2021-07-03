@@ -8,6 +8,7 @@ import {
 
 import { Nav } from './modules/nav/Nav';
 import { Home } from './modules/home/Home';
+import { Todo } from './modules/todo/Todo';
 
 import './App.scss';
 
@@ -17,6 +18,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/todo" component={Todo} />
         <Redirect to="/" />
       </Switch>
     </Router>
