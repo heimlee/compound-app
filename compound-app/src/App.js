@@ -6,6 +6,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 
+import { Nav } from './modules/nav/Nav';
 import { Home } from './modules/home/Home';
 
 import './App.scss';
@@ -13,6 +14,7 @@ import './App.scss';
 function App() {
   return (
     <Router>
+      <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
         <Redirect to="/" />
