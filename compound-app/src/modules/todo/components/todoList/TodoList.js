@@ -7,9 +7,9 @@ import { TodoItem } from '../todoItem/TodoItem';
 import './todoList.scss';
 
 export const TodoList = () => {
-  const todos = useSelector(state => state.todoList.todoList);
-  const loading = useSelector(state => state.todoList.loading);
-  const hasError = useSelector(state => state.todoList.hasError);
+  const todos = useSelector(state => state.todo.todoList);
+  const loading = useSelector(state => state.todo.loading);
+  const hasError = useSelector(state => state.todo.hasError);
   const dispatch = useDispatch();
   
   useEffect(() => {
