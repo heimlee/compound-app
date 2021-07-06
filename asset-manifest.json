@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/compound-app/static/css/main.151e8722.chunk.css",
+    "main.js": "/compound-app/static/js/main.97acad6b.chunk.js",
+    "main.js.map": "/compound-app/static/js/main.97acad6b.chunk.js.map",
+    "runtime-main.js": "/compound-app/static/js/runtime-main.a72c78a9.js",
+    "runtime-main.js.map": "/compound-app/static/js/runtime-main.a72c78a9.js.map",
+    "static/js/2.1ff0e87f.chunk.js": "/compound-app/static/js/2.1ff0e87f.chunk.js",
+    "static/js/2.1ff0e87f.chunk.js.map": "/compound-app/static/js/2.1ff0e87f.chunk.js.map",
+    "index.html": "/compound-app/index.html",
+    "static/css/main.151e8722.chunk.css.map": "/compound-app/static/css/main.151e8722.chunk.css.map",
+    "static/js/2.1ff0e87f.chunk.js.LICENSE.txt": "/compound-app/static/js/2.1ff0e87f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a72c78a9.js",
+    "static/js/2.1ff0e87f.chunk.js",
+    "static/css/main.151e8722.chunk.css",
+    "static/js/main.97acad6b.chunk.js"
+  ]
+}
