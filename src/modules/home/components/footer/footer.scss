@@ -1,0 +1,21 @@
+.home-footer {
+  align-items: center;
+  background-color: #322f32;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+}
+
+.copyright {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  user-select: none;
+  color: #eeeeee;
+}
+
+.copyright-icon {
+  margin-right: 5px;
+}

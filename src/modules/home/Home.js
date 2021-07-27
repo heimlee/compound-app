@@ -1,18 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { HomeTitle } from './components/homeTitle/HomeTitle';
+import { HomeDescription } from './components/homeDescription/HomeDescription';
+import { TechnologyStack } from './components/technologyStack/TechnologyStack';
+import { Footer } from './components/footer/Footer';
 
 import './home.scss';
 
 export const Home = () => (
-  <main className="home-page-container">
-    <div className="home-page-wrapper">
-      <h1 className="home-page-title">Home page</h1>
-      <p>This is the home page.</p>
-      <div>
-        <Link to="/posts" className="button">View Posts</Link>
-        <Link to="/users" className="button">View Users</Link>
-        <Link to="/todo" className="button">Todo List</Link>
+  <>
+    <main className="home-page-container">
+      <div className="home-page-wrapper">
+        <HomeTitle />
+        <HomeDescription />
+        <TechnologyStack />
       </div>
-    </div>
-  </main>
+    </main>
+    <Footer />
+  </>
 );
