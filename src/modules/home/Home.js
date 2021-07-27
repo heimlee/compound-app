@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { HomeTitle } from './components/homeTitle/HomeTitle';
+import { HomeDescription } from './components/homeDescription/HomeDescription';
 
 import './home.scss';
 
@@ -9,7 +10,7 @@ export const Home = () => (
   <main className="home-page-container">
     <div className="home-page-wrapper">
       <HomeTitle />
-      <p>The functionality of the application provides for displaying platform users, their posts and todo lists.</p>
+      <HomeDescription />
       <div>
         <Link to="/posts" className="button">View Posts</Link>
         <Link to="/users" className="button">View Users</Link>
