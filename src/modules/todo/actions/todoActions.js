@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
 export const ADD_TASK = 'ADD_TASK';
 export const COMPLETED_TASK = 'COMPLETED_TASK';
@@ -26,7 +27,7 @@ export const fetchAddTask = (title) => {
   return (dispatch) => {
     axios.post('https://jsonplaceholder.typicode.com/todos', {
       userId: 1,
-      id: (new Date()).getTime(),
+      id: uuidv4(),
       title: title,
       completed: false,
     })
