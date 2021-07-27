@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export const GET_TODO_LIST = 'GET_TODOS';
 export const GET_TODO_LIST_SUCCESS = 'GET_TODOS_SUCCESS';
 export const GET_TODO_LIST_FAILURE = 'GET_TODOS_FAILURE';
@@ -19,8 +21,8 @@ export const fetchTodoList = () => {
   return async (dispatch) => {
     dispatch(getTodoList());
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-      const data = await response.json();
+      const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
+      const data = await response.data;
       dispatch(getTodoListSuccess(data));
     } catch (error) {
       dispatch(getTodoListFailure());

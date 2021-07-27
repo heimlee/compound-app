@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export const ADD_TASK = 'ADD_TASK';
 export const COMPLETED_TASK = 'COMPLETED_TASK';
 export const REMOVE_TASK = 'REMOVE_TASK';
@@ -21,57 +23,43 @@ const completedTask = (id, completed) => ({
 });
 
 export const fetchAddTask = (title) => {
-  return async (dispatch) => {
-    try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos', {
-        method: 'POST',
-        body: JSON.stringify({
-          userId: 1,
-          id: (new Date()).getTime(),
-          title: title,
-          completed: false
-        }),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      });
-      const data = await response.json();
-      dispatch(addTask(data));
-    } catch (err) {
-      console.log(err);
-    }
+  return (dispatch) => {
+    axios.post('https://jsonplaceholder.typicode.com/todos', {
+      userId: 1,
+      id: (new Date()).getTime(),
+      title: title,
+      completed: false,
+    })
+    .then((response) => {
+      dispatch(addTask(response.data));
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   };
 };
 
 export const fetchRemoveTask = (id) => {
-  return async (dispatch) => {
-    try {
-      await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
-        method: 'DELETE',
-      });
+  return (dispatch) => {
+    axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+      id: id,
+    }).then((response) => {
       dispatch(removeTask(id));
-    } catch (err) {
-      console.log(err);
-    }
+    }).catch((error) => {
+      console.log(error);
+    });
   };
 };
 
 export const fetchCompletedTask = (id, completed) => {
-  return async (dispatch) => {
-    try {
-      await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
-        method: 'PUT',
-        body: JSON.stringify({
-          id,
-          completed
-        }),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      });
+  return (dispatch) => {
+    axios.put(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+      id: id,
+      completed: completed,
+    }).then(() => {
       dispatch(completedTask(id, completed));
-    } catch (err) {
-      console.log(err);
-    }
+    }).catch((error) => {
+      console.log(error);
+    })
   };
 };
