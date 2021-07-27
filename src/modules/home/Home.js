@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { HomeTitle } from './components/homeTitle/HomeTitle';
 import { HomeDescription } from './components/homeDescription/HomeDescription';
+import { TechnologyStack } from './components/technologyStack/TechnologyStack';
 
 import './home.scss';
 
@@ -11,11 +11,7 @@ export const Home = () => (
     <div className="home-page-wrapper">
       <HomeTitle />
       <HomeDescription />
-      <div>
-        <Link to="/posts" className="button">View Posts</Link>
-        <Link to="/users" className="button">View Users</Link>
-        <Link to="/todo" className="button">Todo List</Link>
-      </div>
+      <TechnologyStack />
     </div>
   </main>
 );
