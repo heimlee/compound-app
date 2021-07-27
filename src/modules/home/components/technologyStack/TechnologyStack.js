@@ -33,14 +33,14 @@ export const TechnologyStack = () => (
       title={'Redux Thunk'}
     />
     <TechItem 
-      icon={'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg'} 
-      href={'https://create-react-app.dev/docs/adding-a-sass-stylesheet/'} 
-      title={'Sass Stylesheet'}
-    />
-    <TechItem 
       icon={'https://user-images.githubusercontent.com/4060187/61057426-4e5a4600-a3c3-11e9-9114-630743e05814.png'} 
       href={'https://formik.org/'} 
       title={'Formik'}
+    />
+    <TechItem 
+      icon={'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg'} 
+      href={'https://create-react-app.dev/docs/adding-a-sass-stylesheet/'} 
+      title={'Sass Stylesheet'}
     />
     <TechItem 
       icon={'https://material-ui.com/static/logo_raw.svg'} 
