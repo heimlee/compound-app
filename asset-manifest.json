@@ -5,15 +5,15 @@
     "main.js.map": "/compound-app/static/js/main.16d942e2.chunk.js.map",
     "runtime-main.js": "/compound-app/static/js/runtime-main.a72c78a9.js",
     "runtime-main.js.map": "/compound-app/static/js/runtime-main.a72c78a9.js.map",
-    "static/js/2.99b5cf57.chunk.js": "/compound-app/static/js/2.99b5cf57.chunk.js",
-    "static/js/2.99b5cf57.chunk.js.map": "/compound-app/static/js/2.99b5cf57.chunk.js.map",
+    "static/js/2.2f22bb59.chunk.js": "/compound-app/static/js/2.2f22bb59.chunk.js",
+    "static/js/2.2f22bb59.chunk.js.map": "/compound-app/static/js/2.2f22bb59.chunk.js.map",
     "index.html": "/compound-app/index.html",
     "static/css/main.b9d045d0.chunk.css.map": "/compound-app/static/css/main.b9d045d0.chunk.css.map",
-    "static/js/2.99b5cf57.chunk.js.LICENSE.txt": "/compound-app/static/js/2.99b5cf57.chunk.js.LICENSE.txt"
+    "static/js/2.2f22bb59.chunk.js.LICENSE.txt": "/compound-app/static/js/2.2f22bb59.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a72c78a9.js",
-    "static/js/2.99b5cf57.chunk.js",
+    "static/js/2.2f22bb59.chunk.js",
     "static/css/main.b9d045d0.chunk.css",
     "static/js/main.16d942e2.chunk.js"
   ]
