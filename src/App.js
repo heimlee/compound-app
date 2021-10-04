@@ -3,7 +3,6 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from 'react-router-dom';
 
 import { Nav } from './modules/nav/Nav';
@@ -22,12 +21,11 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/posts" component={PostsList} />
-        <Route exact path="/posts/:id" component={Post} />
-        <Route exact path="/users" component={UsersList} />
-        <Route exact path="/users/:id" component={User} />
-        <Route exact path="/todo" component={Todo} />
-        <Redirect to="/" />
+        <Route path="/posts/:id" component={Post} />
+        <Route path="/posts" component={PostsList} />
+        <Route path="/users/:id" component={User} />
+        <Route path="/users" component={UsersList} />
+        <Route path="/todo" component={Todo} />
       </Switch>
     </Router>
   );
