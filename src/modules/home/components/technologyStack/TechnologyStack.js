@@ -43,7 +43,7 @@ export const TechnologyStack = () => (
       title={'Sass Stylesheet'}
     />
     <TechItem 
-      icon={'https://material-ui.com/static/logo_raw.svg'} 
+      icon={'https://v3.mui.com/static/images/material-ui-logo.svg'} 
       href={'https://material-ui.com/'} 
       title={'Material-UI'}
     />
